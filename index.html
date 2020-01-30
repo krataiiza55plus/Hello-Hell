@@ -1,26 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.cities {
-  background-color: black;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FF8C94;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
   color: white;
-  margin: 20px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #FFD385;
   padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #DCEDC2;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #DFAAAG;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 </head>
 <body>
 
-<div class="cities">
-  <h2 style="color: pink;">NAME</h2>
-  <p>Sophita  Iemjui</p>
-</div>
+<h2>Who is Krataii?</h2>
+<p>Are you guys know about me? I think No. so if you want to know me more read the interested things below</p>
+<header>
+  <h2>WELLCOME</h2>
+</header>
 
-<div class="cities">
-  <h2 style="color: pink;">Nickname</h2>
-  <p>krataii</p>
-</div>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Name</a></li>
+      <li><a href="#">Age</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>NAME</h1>
+    <h3>SOPHITA  IEMJUI</h3>
+    <p>My name is Sophita  Iemjui, and my friends call me krataii. it means rabbit in English</p>
+    <h1>AGE</h1>
+    <h3>20 years old</h3>
+    <p>I was born on july,9 1999. this year I will turn to 20 y/o but now I'm 20</p>
+    <h1>CONTEACT</h1>
+    <h3>Instragram</h3>
+    <p>Follow me please " krataiiza55plus " if you want another way to contact me, follow my instragam first.</p>
+    
+  </article>
+</section>
+
+<footer>
+  <p>Nice to meet yall,XOXO</p>
+</footer>
 
 </body>
 </html>
